@@ -5,53 +5,53 @@
   <title>Travel Fast</title>
   <link rel="stylesheet" href="./travel_recommendation.css">
 </head>
-<body>
-   <nav><h1>Health Analysis Census</h1>
+
+  <style>
+    body {
+      background-image: url('./Images/pexels-apasaric-1285625.jpg');
+      background-size:100%;
+      
+      
+    }
+    </style>
+   <nav>
+    <img src="./Images/plane.png" height="60px" margin="0px">
+    <h1>Travel Fast</h1>
 <ul>
   <li><a href="./index.html" id="home">Home </a></li>
+  
+  <li><a href="./about_us.html" id="aboutus">About Us </a></li> 
   <li><a href="./travel_recommendation_contact.html" id="contact">Contact Us </a></li>
-  <li><a href="./about_us.html" id="aboutus">About Us </a></li>
-  <li><input type="text" id="conditionInput" placeholder="Enter a destination or keyword">  </li>
-  <li><button id='btnSearch'>Search</button>
-  </li>
+  
+
+  <li><input type="text" id="destination" placeholder="Enter a destination or keyword">  </li>
+  <button class="search-btn" onclick="searchDestinations()">Search</button>
+  <button class="reset-btn" onclick="resetSearch()">Clear</button>
+  
+
 
 </ul>
 </nav>
-<div class="container">
-<div class="analysisForm">
-<h1>Healthcare Data Analysis</h1>
-<div>
-<label for="name">Name:</label>
-<input type="text" id="name">
+<div><h2>
+  <br>SET FOOT TO EXPLORE </br>
+    WHAT YOU LOVE</h2>
+    
+  
+    <p>Discover your next adventure with Travel Fast. We're here to help you</p>
+    <p>find the perfect destination, tailored to your unique interests and</p>  
+    <p>budget. Whether you're dreaming of a relaxing beach getaway,</p> 
+    <p>a thrilling city exploration, or a cultural immersion, </p>
+    <p>our curated recommendations will inspire and guide you.</p> 
+    <p>Let us be your trusted companion on your journey of discovery.</p>
+  
+    <button id='booknow'> BOOK NOW</button>
+  </div>
+  <img src="./Images/pngwing.com.png" height="50px" id="socialmedia">
+
+  <div id="search-results-overlay" class="search-results-overlay">
+    <div id="search-results"></div>
 </div>
-<div>
-<label>Gender:</label>
-<label for="male">Male</label>
-<input type="radio" name="gender" id="male" value="Male">
-<label for="female">Female</label>
-<input type="radio" name="gender" id="female" value="Female">
-</div>
-<div>
-<label for="age">Age:</label>
-<input type="number" id="age">
-</div>
-<div>
-<label for="condition">Condition:</label>
-<select id="condition">
-  <option value="">Select condition</option>
-  <option value="Diabetes">Diabetes</option>
-  <option value="Thyroid">Thyroid</option>
-  <option value="High Blood Pressure">High Blood Pressure</option>
-</select>
-</div>
-<button id="addPatient">Add Patient</button>
-<h2>Analysis Report</h2>
-<div id="report"></div>
-</div>
-<div class="searchCondition">
-    <div id="result"></div>
-</div>
-</div>
-<script src="./health_analysis.js"></script>
+  </div>
+<script src="./travel_recommendation.js"></script>
 </body>
 </html>
